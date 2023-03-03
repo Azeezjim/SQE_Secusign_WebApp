@@ -5,6 +5,7 @@ import React from 'react';
 
 function NavItem({ link, children }) {
   return (
+    
     <li className="h-full ">
       <Link
         href={link}
