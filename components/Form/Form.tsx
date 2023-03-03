@@ -40,7 +40,6 @@ const SearchForm = () => {
                                 onChange={handleInputChange}
                                 placeholder={undefined}
                             />
-                            
                         </div>
                         <InputField
                             label="Email Address"
