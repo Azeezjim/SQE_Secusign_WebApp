@@ -1,6 +1,6 @@
 import { FaCopy } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import CurrencySelect from "./SelectCurrency";
+// import CurrencySelect from "./SelectCurrency";
 import Search from "./UserSearchDialog";
 import DocumentInputField from "../Dropfield";
 import { useState } from "react";
