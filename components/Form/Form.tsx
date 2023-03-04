@@ -64,7 +64,7 @@ const SearchForm = () => {
                             <SearchInput
                                 // placeholder="Search for something"
                                 value={searchTerm}
-                                labelName = "Sellect withness"
+                                labelName = "Select withness"
                                 onChange={handleInputChange}
                                 placeholder={undefined}
                             />
@@ -83,7 +83,7 @@ const SearchForm = () => {
                             <SearchInput
                                 // placeholder="Search for something"
                                 value={searchTerm}
-                                labelName="Sellect Location"
+                                labelName="Select Location"
                                 onChange={handleInputChange}
                                 placeholder={undefined}
                             />
