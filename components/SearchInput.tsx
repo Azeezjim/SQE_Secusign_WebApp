@@ -1,11 +1,11 @@
 import React from 'react';
 import { BiSearchAlt } from 'react-icons/bi';
 
-const SearchInput = ({ placeholder, value, onChange }) => (
+const SearchInput = ({ placeholder, value, onChange,labelName }) => (
   <div className='mt-1 relative rounded-md shadow-sm w-full  space-y-2'>
     <label className="relative text-sm font-medium text-gray-700 text-left"
       htmlFor="search">
-      Add Recipent
+      {labelName}
     </label>
     <div className="relative text-gray-600 focus-within:text-gray-400">
 
