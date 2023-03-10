@@ -5,7 +5,6 @@ import Header from '../components/Header/Index';
 import Tapbar from '../components/Tapbar/Index';
 import { AccountsProvider } from '../context/AcountsContext';
 import { CurrencyProvider } from '../context/CurrencyContext';
-// import { AccountsProvider } from './contexts/AccountsContext';
 
 function Root() {
   return (
