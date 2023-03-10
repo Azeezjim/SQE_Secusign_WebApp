@@ -12,7 +12,7 @@ function Root() {
     <div className="h-[100%]">
       <Header />
       <main className="grid max-h-screen w-screen max-w-screen-2xl grid-cols-1 grid-rows-1 items-center justify-center gap-8 bg-neutral-50 font-grotesk">
-        <div className="h-full p-4">
+        <div className="h-full py-4 ">
           <CurrencyProvider>
             <AccountsProvider>
               <Outlet />

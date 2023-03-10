@@ -27,11 +27,11 @@ const SearchForm = () => {
         },
     });
     return (
+        <div className="ml-4">
+
         <div className=" bg-white h-auto w-[90%] mt-[-90px] mx-auto mb-14 max-w-4xl flex justify-center items-center border-2 border-gray-200 rounded-xl ">
             <div className="items-cente my-7 w-[85%]">
-
                 <div className="flex flex-col w-[100%] space-y-5">
-
                     <div className="flex justify-between items-center space-x-3">
                         <div className="w-[47%]">
                             <SearchInput
@@ -140,7 +140,6 @@ const SearchForm = () => {
                             <div className="space-y-3">
                                 <label
                                     htmlFor="about"
-                                    className="block text-sm font-medium "
                                 >
                                     Description
                                 </label>
@@ -159,7 +158,6 @@ const SearchForm = () => {
                             <div className="space-y-3 w-[100%]">
                                 <label
                                     htmlFor="about"
-                                    className="block font-medium  "
                                 >
                                     Contract signature
                                 </label>
@@ -215,6 +213,7 @@ const SearchForm = () => {
                 </div>
             </div>
             {/* </div> */}
+        </div>
         </div>
     );
 };
