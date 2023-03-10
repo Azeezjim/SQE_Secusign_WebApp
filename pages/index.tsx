@@ -21,7 +21,6 @@ function Root() {
       </main>
       <Tapbar />
       <SearchForm />
-      
     </div>
   );
 }
