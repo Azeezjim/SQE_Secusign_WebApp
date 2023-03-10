@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "date": "2014-01-01",
+    "activity": "SQE Network Staking",
+    "status": "pending",
+    "balance": 1000
+  },
+  {
+    "id": 2,
+    "date": "2014-01-02",
+    "activity": "NFT Purchase from SQE Network",
+    "status": "completed",
+    "balance": 1000
+  },
+  {
+    "id": 3,
+    "date": "2014-01-03",
+    "activity": "staking of ETH on DeFi Protocol",
+    "status": "pending",
+    "balance": 1000
+  },
+  {
+    "id": 4,
+    "date": "2014-01-04",
+    "activity": "Purchase of Decentralized Tesla Stock Tokens",
+    "status": "pending",
+    "balance": 1000
+  },
+  {
+    "id": 5,
+    "date": "2014-01-05",
+    "activity": "Mavericks vs Lakers Game Ticket",
+    "status": "completed",
+    "balance": 1000
+  },
+  {
+    "id": 6,
+    "date": "2014-01-06",
+    "activity": "Staking Rewards from DeFi Protocol",
+    "status": "completed",
+    "balance": 1000
+  },
+  {
+    "id": 7,
+    "date": "2014-01-07",
+    "activity": "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "status": "pending",
+    "balance": 1000
+  },
+  {
+    "id": 8,
+    "date": "2014-01-08",
+    "activity": "Buying of XRP Tokens",
+    "status": "pending",
+    "balance": 1000
+  },
+  {
+    "id": 9,
+    "date": "2014-01-09",
+    "activity": "Lorem ipsum dolor sit amet",
+    "status": "pending",
+    "balance": 1000
+  }
+]

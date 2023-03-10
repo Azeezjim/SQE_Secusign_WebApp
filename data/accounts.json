@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "BTC",
+    "image": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+    "balance": 4000,
+    "currency": "USD"
+  },
+  {
+    "id": 2,
+    "name": "ETH",
+    "image": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+    "balance": 1000,
+    "currency": "USD"
+  },
+  {
+    "id": 3,
+    "name": "XRP",
+    "image": "https://s2.coinmarketcap.com/static/img/coins/64x64/52.png",
+    "balance": 1000,
+    "currency": "USD"
+  },
+  {
+    "id": 4,
+    "name": "LTC",
+    "image": "https://s2.coinmarketcap.com/static/img/coins/64x64/2.png",
+    "balance": 1000,
+    "currency": "USD"
+  },
+  {
+    "id": 5,
+    "name": "BCH",
+    "image": "https://s2.coinmarketcap.com/static/img/coins/64x64/1831.png",
+    "balance": 1000
+  }
+]
