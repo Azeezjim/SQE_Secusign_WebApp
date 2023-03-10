@@ -2,8 +2,8 @@ import React from 'react';
 import { BiSearchAlt } from 'react-icons/bi';
 
 const SearchInput = ({ placeholder, value, onChange,labelName }) => (
-  <div className='mt-1 relative rounded-md shadow-sm w-full  space-y-2'>
-    <label className="relative text-sm font-medium text-gray-700 text-left"
+  <div className="grid grid-flow-row gap-2 text-sm">
+    <label 
       htmlFor="search">
       {labelName}
     </label>
@@ -16,7 +16,7 @@ const SearchInput = ({ placeholder, value, onChange,labelName }) => (
       </span>
 
       <input
-        className="border border-gray-200 border-solid rounded-md py-3 px-4 w-full bg-white"
+        className="text-grotesk h-8 w-full rounded-md bg-slate-100 p-2" 
         type="text"
         placeholder={placeholder}
         value={value}

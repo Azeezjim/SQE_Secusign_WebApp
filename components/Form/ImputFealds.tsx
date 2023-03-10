@@ -38,10 +38,13 @@ export const InputField = (props: InputProps): JSX.Element => {
 
   return (
     <div className={clsx(className, "my-3")}>
+      {/* <div className="grid grid-flow-row gap-2 text-sm">
+            <label htmlFor="description">Description</label>
+            <textarea name="description" id="description" rows={8} className="w-full rounded bg-slate-100 p-2" />
+          </div> */}
       <label
         htmlFor={id}
-        className="relative text-sm font-medium text-gray-700 text-left"
-       >
+        >
         {label}
         {requirement === true ? (
           <span className=" text-red-500">
@@ -56,8 +59,8 @@ export const InputField = (props: InputProps): JSX.Element => {
           {...inputProps}
           required={required}
           placeholder={placeholder}
-          className="border border-gray-200 border-solid rounded-md py-3 px-4 w-full bg-white"
-        />
+          className="text-grotesk h-8 w-full rounded-md bg-slate-100 p-2"
+          />
         {error && (
           <p className="mt-2 text-sm text-red-600" id="email-error">
             {helperText}
@@ -170,9 +173,13 @@ export function TextareaField(props: InputProps) {
   const { requirement } = props;
   return (
     <div className={clsx(props.className)}>
+      {/* <div className="grid grid-flow-row gap-2 text-sm">
+            <label htmlFor="description">Description</label>
+            <textarea name="description" id="description" rows={8} className="w-full rounded bg-slate-100 p-2" />
+          </div> */}
       <label
         htmlFor="comment"
-        className="relative block text-sm font-medium text-gray-700"
+        // className="relative block text-sm font-medium text-gray-700"
       >
         {props.label}
         {requirement === true ? (
@@ -189,7 +196,7 @@ export function TextareaField(props: InputProps) {
           {...props.inputProps}
           required={props.required}
           placeholder={props.placeholder}
-          className="shadow-sm p-4 focus:ring-gray-200 focus:border-gray-200 block w-full sm:text-sm  border border-solid border-gray-200 rounded-md"
+          className="w-full rounded bg-slate-100 p-2"
         />
         {props.error && (
           <p className="mt-2 text-sm text-red-600" id="email-error">

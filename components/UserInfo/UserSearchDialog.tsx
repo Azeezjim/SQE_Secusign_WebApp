@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { AiOutlineSearch } from 'react-icons/ai';
-// import users from '../../data/users.json';
+import users from '../../data/users.json';
 
 interface User {
   id: number;
@@ -17,7 +17,7 @@ export default function Search() {
 
   const searcher = (data: Array<User>) =>
     data.filter((item) => item.username.includes(search.toUpperCase()));
-  // const result = searcher(users);
+  const result = searcher(users);
 
   return (
     <Dialog.Root>
@@ -50,8 +50,8 @@ export default function Search() {
               </form>
             </div>
             <div className="flex h-24 flex-col overflow-y-scroll">
-              {/* {result.map((user) => (
-                <div className="border-b p-3" key={user.id}>FF
+              {result.map((user) => (
+                <div className="border-b p-3" key={user.id}>
                   {user.username}
                 </div>
               ))}
@@ -61,7 +61,7 @@ export default function Search() {
                 </h2>
               ) : (
                 ''
-              )} */}
+              )}
             </div>
 
             <div className="flex items-center justify-around border-t p-2 py-8">
