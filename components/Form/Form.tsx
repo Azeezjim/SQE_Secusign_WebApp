@@ -37,7 +37,7 @@ const SearchForm = () => {
         },
     });
     return (
-        <div className="ml-4 sm:ml-0">
+        <div className=" sm:ml-0">
             <div className="font-grotesk bg-white h-auto w-[90%] mt-[-90px] mx-auto mb-14 max-w-4xl flex justify-center items-center border-2 border-gray-200 rounded-xl ">
                 <div className="items-cente my-7 w-[85%]">
                     <div className="flex flex-col w-[100%] space-y-5 sm:space-y-1">
