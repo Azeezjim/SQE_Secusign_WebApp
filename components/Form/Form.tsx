@@ -8,8 +8,6 @@ import Button from "../Button";
 import DocumentInputField from "../Dropfield";
 import SearchInput from "../SearchInput";
 import ImageUpload from "../UploadFile";
-import FileUpload from "../UploadFile";
-import UploadFile from "../UploadFile";
 import { InputField, SelectField, TextareaField } from "./ImputFealds";
 
 const SearchForm = () => {
