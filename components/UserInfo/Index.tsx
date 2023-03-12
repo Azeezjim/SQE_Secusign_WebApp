@@ -31,7 +31,8 @@ function User() {
       <h1 className="self-center spacy justify-self-start text-lg font-semibold sm:text-x py-8 ">
         Hi, @{user.user_name}
       </h1>
-      <div className="col-start-2 row-start-1 flex flex-row items-center justify-center gap-1 justify-self-end">
+      <div className="col-start-2 row-start-1 flex flex- items-center justify-center gap-2 justify-self-end sm:flex-col">
+        <div className= ' flex sm:flex sm:flex-row'>
         <h1 className="font-semibold uppercase">{shortID}</h1>
         <CopyToClipboard text={user.id}>
           <button
@@ -41,6 +42,7 @@ function User() {
             <FaCopy />
           </button>
         </CopyToClipboard>
+        </div>
         <Search />
       </div>
     </div>
