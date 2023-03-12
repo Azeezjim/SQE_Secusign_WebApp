@@ -223,7 +223,7 @@ const SearchForm = () => {
                                         dropzoneOpt={{
                                             maxFiles: 1,
                                             minSize: 4,
-                                            accept: ".pdf,.docx,.doc,.zip",
+                                            accept: ".pdf,.docx,.doc,.zip, .png",
                                             onDrop: onDrop,
                                             maxSize: 10000000,
                                         }}

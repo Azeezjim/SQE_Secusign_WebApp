@@ -3,7 +3,6 @@ import React from "react";
 const DocumentInputField = () => {
   return (
     <div className="flex flex-col items-start">
-      {/* <label className="text-gray-100 font-medium mb-2">Document</label> */}
       <div className="relative w-full">
         <input
           className="w-full border rounded-md py-2 px-3 text-gray-100 leading-tight focus:outline-none focus:shadow-outline"
