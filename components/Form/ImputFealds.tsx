@@ -1,12 +1,9 @@
 /* eslint-disable require-jsdoc */
 import React from "react";
 import clsx from "clsx";
-// import InputScaffold, { InputScaffoldProps } from "./InputScaffold";
 import { ErrorMessage, Field } from "formik";
 import InputScaffold, { InputScaffoldProps } from "./ImputScaffold";
-// import "react-datepicker/dist/react-datepicker.css";
-// import InputScaffold, { InputScaffoldProps } from "./ImputScaffoled";
-// import TextError from "./AdvisoryServices/TextError";
+
 
 interface InputProps {
   type?: string;
@@ -38,10 +35,7 @@ export const InputField = (props: InputProps): JSX.Element => {
 
   return (
     <div className={clsx(className, "my-3")}>
-      {/* <div className="grid grid-flow-row gap-2 text-sm">
-            <label htmlFor="description">Description</label>
-            <textarea name="description" id="description" rows={8} className="w-full rounded bg-slate-100 p-2" />
-          </div> */}
+
       <label
         htmlFor={id}
         >
@@ -59,7 +53,7 @@ export const InputField = (props: InputProps): JSX.Element => {
           {...inputProps}
           required={required}
           placeholder={placeholder}
-          className="text-grotesk h-8 w-full rounded-md bg-slate-100 p-2"
+          className="text-grotesk h-10 w-full rounded-md bg-slate-100 p-2 pl-[17px]"
           />
         {error && (
           <p className="mt-2 text-sm text-red-600" id="email-error">
@@ -173,13 +167,9 @@ export function TextareaField(props: InputProps) {
   const { requirement } = props;
   return (
     <div className={clsx(props.className)}>
-      {/* <div className="grid grid-flow-row gap-2 text-sm">
-            <label htmlFor="description">Description</label>
-            <textarea name="description" id="description" rows={8} className="w-full rounded bg-slate-100 p-2" />
-          </div> */}
+      
       <label
         htmlFor="comment"
-        // className="relative block text-sm font-medium text-gray-700"
       >
         {props.label}
         {requirement === true ? (

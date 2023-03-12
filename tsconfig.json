@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Tapbar/NavItem.tsx", "components/UserInfo/Index.jsx"  ],
+, "components/Tapbar/NavItem.jsx"  ],
   "exclude": [
     "node_modules"
   ]
