@@ -1,6 +1,4 @@
 /* eslint-disable react/require-default-props */
-import { useState, useEffect, useCallback } from 'react';
-import { FaTimes } from 'react-icons/fa';
 import Image from "next/image";
 import { useDropzone, DropzoneOptions } from 'react-dropzone';
 
