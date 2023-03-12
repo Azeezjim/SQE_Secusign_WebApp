@@ -216,7 +216,7 @@ const SearchForm = () => {
                         </div>
                         
                         <div className="mb-10 mt-5">
-                            <div className="mb-3 flex flex-row  justify-between items-center mobile:flex-col w-[90%] space-x-5">
+                            <div className="mb-3 flex flex-row  justify-between items-center mobile:flex-col space-x-5">
                                 <div className="w-[47%] mobile:w-[100%]">
                                     <ImageUpload
                                         label="The format should be PDF, Word, or ZIP file (Max 10MB)"
