@@ -37,13 +37,12 @@ const SearchForm = () => {
         },
     });
     return (
-        <div className="ml-4">
-
+        <div className="ml-4 sm:ml-0">
             <div className="font-grotesk bg-white h-auto w-[90%] mt-[-90px] mx-auto mb-14 max-w-4xl flex justify-center items-center border-2 border-gray-200 rounded-xl ">
                 <div className="items-cente my-7 w-[85%]">
-                    <div className="flex flex-col w-[100%] space-y-5 mobile:space-y-1">
-                        <div className="flex justify-between items-center mobile:flex-col space-x-3">
-                            <div className="w-[47%] mobile:w-[100%]">
+                    <div className="flex flex-col w-[100%] space-y-5 sm:space-y-1">
+                        <div className="flex justify-between items-center sm:flex-col space-x-3">
+                            <div className="w-[47%] sm:w-[100%]">
                                 <SearchInput
                                     value={searchTerm}
                                     labelName="Add Recipient"
@@ -64,12 +63,12 @@ const SearchForm = () => {
                                     onChange: formik?.handleChange("email"),
                                     onBlur: formik?.handleBlur("email"),
                                 }}
-                                className="w-[47%] mobile:w-[100%]"
+                                className="w-[47%] sm:w-[100%]"
                             />
                         </div>
 
-                        <div className="flex justify-between items-center mobile:flex-col space-x-3">
-                            <div className="w-[47%] mobile:w-[100%]">
+                        <div className="flex justify-between items-center sm:flex-col space-x-3">
+                            <div className="w-[47%] sm:w-[100%]">
                                 <SearchInput
                                     value={searchTerm}
                                     labelName="Select withness"
@@ -77,7 +76,7 @@ const SearchForm = () => {
                                     placeholder={undefined}
                                 />
                             </div>
-                            <label className="flex mt-7 items-center w-[47%] mobile:w-[100%]">
+                            <label className="flex mt-7 items-center w-[47%] sm:w-[100%]">
                                 <input
                                     type="checkbox"
                                     className="form-checkbox h-5 w-5 transition duration-150 ease-in-out"
@@ -86,8 +85,8 @@ const SearchForm = () => {
                             </label>
                         </div>
 
-                        <div className="flex justify-between items-center mobile:flex-col space-x-3">
-                            <div className="w-[47%] mt-1 mobile:w-[100%]">
+                        <div className="flex justify-between items-center sm:flex-col space-x-3">
+                            <div className="w-[47%] mt-1 sm:w-[100%]">
                                 <SearchInput
                                     value={searchTerm}
                                     labelName="Select Location"
@@ -96,7 +95,7 @@ const SearchForm = () => {
                                 />
                             </div>
 
-                            <label className="flex mt-7 mobile:mt-5 items-center mobile:w-[100%] w-[47%] space-x-1">
+                            <label className="flex mt-7 sm:mt-5 items-center sm:w-[100%] w-[47%] space-x-1">
                                 <input
                                     type="checkbox"
                                     className="form-checkbox h-5 w-5 text-blue-700 transition duration-150 ease-in-out "
@@ -183,9 +182,9 @@ const SearchForm = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-between items-center mobile:flex-col space-x-3">
+                        <div className="flex justify-between items-center sm:flex-col space-x-3">
 
-                            <div className="grid grid-flow-row gap-2 text-sm w-[47%] mobile:w-[100%] font-grotesk">
+                            <div className="grid grid-flow-row gap-2 text-sm w-[47%] sm:w-[100%] font-grotesk">
                                 <InputField
                                     label="Refrence"
                                     placeholder="hf478h..."
@@ -202,7 +201,7 @@ const SearchForm = () => {
                                     className="w-[100%]"
                                 />
                             </div>
-                            <div className="w-[40%] mobile:w-[100%] mobile:flex justify-center ic">
+                            <div className="w-[40%] sm:w-[100%] sm:flex justify-center ic">
                                 <Image
                                     height={60}
                                     width={200}
@@ -214,8 +213,8 @@ const SearchForm = () => {
                         </div>
                         
                         <div className="mb-10 mt-5">
-                            <div className="mb-3 flex flex-row  justify-between items-center mobile:flex-col space-x-5">
-                                <div className="w-[47%] mobile:w-[100%]">
+                            <div className="mb-3 flex flex-row  justify-between items-center sm:flex-col space-x-5">
+                                <div className="w-[47%] sm:w-[100%]">
                                     <ImageUpload
                                         label="The format should be PDF, Word, or ZIP file (Max 10MB)"
                                         dropzoneOpt={{

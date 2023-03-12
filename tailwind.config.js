@@ -25,8 +25,16 @@ module.exports = {
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
-      'mobile': {'max': '475px'},
+      'ssm': {'max': '475px'},
       // => @media (max-width: 475px) { ... }
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
     }
   },
   plugins: [],
