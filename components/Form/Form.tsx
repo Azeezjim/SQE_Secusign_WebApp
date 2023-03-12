@@ -146,7 +146,7 @@ const SearchForm = () => {
                         </div>
 
                         <div className="flex flex- w-[100%] space-x-[5%] items-center">
-                            <div className=" w-[94%] space-y-5">
+                            <div className=" w-[100%] space-y-5">
                                 <div className="space-y-3">
                                     <label
                                         htmlFor="about"
