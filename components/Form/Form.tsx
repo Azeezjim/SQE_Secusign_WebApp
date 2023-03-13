@@ -14,6 +14,22 @@ const SearchForm = () => {
 
     const [searchTerm, setSearchTerm] = useState("");
     const [files, setFiles] = useState([]);
+    const [witness, setWitness] = useState(false);
+    const [location, setLocation] = useState(false);
+    const [datesgn, setDatesgn] = useState(false);
+
+
+    const handleCheckboxWitness = (event) => {
+      setWitness(event.target.checked);
+    }
+
+    const handleCheckboxLocation = (event) => {
+        setLocation(event.target.checked);
+      }
+
+      const handleCheckboxDatesgn = (event) => {
+        setDatesgn(event.target.checked);
+      }
 
 
     const onDrop = useCallback((acceptedFiles, rejectedFiles) => {
@@ -38,7 +54,7 @@ const SearchForm = () => {
     });
     return (
         <div className=" sm:ml-0">
-            <div className="font-grotesk bg-white h-auto w-[90%] mt-[-90px] mx-auto mb-14 max-w-4xl flex justify-center items-center border-2 border-gray-200 rounded-xl ">
+            <div className="font-grotesk bg-white h-auto w-[90%] mt-[-90px] mx-auto mb-14 max-w-4xl flex justify-center items-center border-2 border-gray-200 rounded-xl">
                 <div className="items-cente my-7 w-[85%]">
                     <div className="flex flex-col w-[100%] space-y-5 sm:space-y-1">
                         <div className="flex justify-between items-center sm:flex-col space-x-3">
@@ -51,7 +67,7 @@ const SearchForm = () => {
                                 />
                             </div>
                             <InputField
-                                label="Email Address"
+                                label="Recipient's email"
                                 placeholder="example@mail.com"
                                 type="email"
                                 id="email"
@@ -67,25 +83,38 @@ const SearchForm = () => {
                             />
                         </div>
 
-                        <div className="flex justify-between items-center sm:flex-col space-x-3">
+                        <div className="flex justify-between items-center sm:flex-col sm:space-y-3 space-x-3">
+                            <label className="flex mt-6 sm:mt-5 items-center w-[47%] sm:w-[100%]">
+                                <input
+                                    type="checkbox"
+                                    onChange={handleCheckboxWitness}
+                                    checked={witness}
+                                    className="form-checkbox h-5 w-5 transition duration-150 ease-in-out"
+                                />
+                                <span className="ml-2 overflow-auto text-sm font-grotesk">Multi Signature</span>
+                            </label>
+                            {witness && 
                             <div className="w-[47%] sm:w-[100%]">
                                 <SearchInput
                                     value={searchTerm}
                                     labelName="Select withness"
                                     onChange={handleInputChange}
                                     placeholder={undefined}
-                                />
-                            </div>
-                            <label className="flex mt-7 items-center w-[47%] sm:w-[100%]">
-                                <input
-                                    type="checkbox"
-                                    className="form-checkbox h-5 w-5 transition duration-150 ease-in-out"
-                                />
-                                <span className="ml-2 overflow-auto text-sm font-grotesk">Multi Signature</span>
-                            </label>
+                                /> 
+                            </div>}
                         </div>
 
-                        <div className="flex justify-between items-center sm:flex-col space-x-3">
+                        <div className="flex justify-between items-center sm:flex-col sm:space-y-3 space-x-3">
+                            <label className="flex mt-6 sm:mt-5 items-center sm:w-[100%] w-[47%] space-x-1">
+                                <input
+                                    type="checkbox"
+                                    onChange={handleCheckboxLocation}
+                                    checked={location}
+                                    className="form-checkbox h-5 w-5 text-blue-700 transition duration-150 ease-in-out "
+                                />
+                                <span className="overflow-auto text-sm font-grotesk">Capture Signature</span>
+                            </label>
+                            {location &&
                             <div className="w-[47%] mt-1 sm:w-[100%]">
                                 <SearchInput
                                     value={searchTerm}
@@ -93,21 +122,24 @@ const SearchForm = () => {
                                     onChange={handleInputChange}
                                     placeholder={undefined}
                                 />
-                            </div>
+                            </div>}
 
-                            <label className="flex mt-7 sm:mt-5 items-center sm:w-[100%] w-[47%] space-x-1">
+                        </div>
+                        <div className="flex flex-row justify-between items-center w-[100%] sm:w-[90%] space-x-5 mb-2">
+                            
+                        <label className="flex mt-6 sm:mt-5 items-center w-[47%] sm:w-[100%]">
                                 <input
                                     type="checkbox"
-                                    className="form-checkbox h-5 w-5 text-blue-700 transition duration-150 ease-in-out "
+                                    onChange={handleCheckboxDatesgn}
+                                    checked={datesgn}
+                                    className="form-checkbox h-5 w-5 transition duration-150 ease-in-out"
                                 />
-                                <span className="overflow-auto text-sm font-grotesk">Capture Signature</span>
+                                <span className="ml-2 overflow-auto text-sm font-grotesk">Signature date/time</span>
                             </label>
-                        </div>
-                        <div className="flex flex-row justify-between items-center w-[90%] space-x-5">
-
-                            <label className="block items-center w-[25%] mt-5">Signature date/time:</label>
-                            <div className="flex justify-between items-center w-[75%] space-x-[5%]">
-                                <div className=" w-[47%] ">
+                            {/* <label className="block items-center w-[25%] mt-5">Signature date/time:</label> */}
+                            {datesgn &&
+                            <div className="flex justify-between items-center w-[100%] sm:w-[70%] space-x-[10%] sm:space-x-[5%]  ">
+                                <div className=" w-[47%]">
                                     <InputField
                                         label="Time"
                                         type="time"
@@ -141,12 +173,12 @@ const SearchForm = () => {
 
                                 </div>
 
-                            </div>
+                            </div>}
                         </div>
 
                         <div className="flex flex- w-[100%] space-x-[5%] items-center">
-                            <div className=" w-[100%] space-y-5">
-                                <div className="space-y-3">
+                            <div className=" w-[100%] space-y-5 mt-3">
+                                <div className="space-y-1">
                                     <label
                                         htmlFor="about"
                                     >
@@ -164,7 +196,7 @@ const SearchForm = () => {
                                     </div>
                                 </div>
 
-                                <div className="space-y-3 w-[100%]">
+                                <div className="space-y-1 w-[100%]">
                                     <label
                                         htmlFor="about"
                                     >
@@ -211,7 +243,7 @@ const SearchForm = () => {
                                 />
                             </div>
                         </div>
-                        
+
                         <div className="mb-10 mt-5">
                             <div className="mb-3 flex flex-row  justify-between items-center sm:flex-col space-x-5">
                                 <div className="w-[47%] sm:w-[100%]">

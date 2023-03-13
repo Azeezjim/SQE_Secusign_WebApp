@@ -27,16 +27,16 @@ function User() {
   // console.log('currency', context)
 
   return (
-    <div className="relative mx-auto grid w-full max-w-4xl grid-flow-dense  grid-cols-2 grid-rows-auto-1fr justify-center gap-2 rounded-xl bg-gradient-to-br from-blue-900 to-sky-600 p-4 text-center text-white">
+    <div className="relative mx-auto grid w-full max-w-4xl grid-flow-dense  grid-cols-2 grid-rows-auto-1fr justify-center gap-3 rounded-xl bg-gradient-to-br from-blue-900 to-sky-600 p-4 text-center text-white">
       <h1 className="self-center spacy justify-self-start text-lg font-semibold sm:text-x py-8 ">
         Hi, @{user.user_name}
       </h1>
-      <div className="col-start-2 row-start-1 flex flex- items-center justify-center gap-2 justify-self-end sm:flex-col">
-        <div className= ' flex sm:flex sm:flex-row'>
+      <div className="col-start-2 row-start-1 flex flex- items-center justify-center gap-2 justify-self-end ">
+        <div className= ' flex'>
         <h1 className="font-semibold uppercase">{shortID}</h1>
         <CopyToClipboard text={user.id}>
           <button
-            className="grid aspect-square rounded-full border border-transparent p-1 active:border-sky-500 active:text-sky-500"
+            className="grid sm:flex sm:justify-end aspect-square rounded-full border border-transparent p-1 active:border-sky-500 active:text-sky-500 "
             type="button"
           >
             <FaCopy />
